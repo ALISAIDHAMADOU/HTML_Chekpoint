@@ -3,50 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
   <title>Portfolio</title>
 </head>
 <body>
   <header>
+  
     <!--Navbar -->
-    <nav>
+    <div class="navbar">
+      <div class="logo-image">
+    <img src="/images/portfolio-logo.png" alt="portfolio">
+      </div>
+      <nav>
       <ul>
-        <li><a href="#Home">Home</a></li>
+        <li><a href="#Home" class="active">Home</a></li>
         <li><a href="#About">About</a></li>
         <li><a href="#Work">Work</a></li>
-        <li><a href="#Resume">Resume</a></li>
-        <li><a href="#Contact">Contact</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-  </header>
+    </div>
+    </header>
 
   <!--Home-section-->
   <section id="Home">
-    <h1>Welcome to my Portfolio </h1>
-    <p>I am a software engineering student and passionate about web and mobile development </p>
-    <img src="image-ali.jpg" alt="My_picture" width="200">
+    <div class="home-content">
+      <h1 style="color: brown;">Welcome to my Portfolio </h1>
+    <p> Hi,I'm ALI SAID <br> I am a software engineering student and passionate about web and mobile development  </p>
+    <img class="profile-img" src="/images/image-ali.jpg" alt="My_picture" >
+    </div>
   </section>
+
   <section id="About">
-    <h2>About Me</h2>
-    <p>I hold a bachelor's degree in software engineering and I’m currently pursuing a software Ingineering in Woolf College.</p>
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/nc_mmCKVR4g?si=SESUd69G58o7z-gk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="about-section">
+        <div class="titreAbout">
+        <h2>About Me</h2>
+       </div>
+       <div contenuAbout>
+        <p>I am a dedicated software engineering graduate with a strong passion for building web and mobile applications.  <br>
+          Currently pursuing my Master's in Software Engineering at Woolf College, I continue to expand my skills in system security, frontend/backend development, and network administration.  
+          I enjoy turning complex problems into clean, efficient, and scalable solutions.
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nc_mmCKVR4g?si=SESUd69G58o7z-gk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       </div>
+    </div>
+       
   </section>
 
+ 
   <section id="Work">
-    <h2>My Projets</h2>
-    <ul>
+    <div class="projet-section">
+
+       <div class="titre-projet">
+        <h2>My Projets</h2>
+      </div>
+      <div class="work-content">
+      <ul>
       <li>Online application form</li>
       <li>Personal HTML portfolio</li>
       <li>Grade management application</li>
     </ul>
     <audio controls>
-      <source src="audio.mp3" type="audio/mpeg">
+      <source class="audio-projet" src="audio.mp3" type="audio/mpeg">
     </audio>
+      </div>
+    
+    </div>
+    
   </section>
 
-  <section id="Resume">
-     <h2>My CV</h2>
-    <table border="1">
+  <section id="resume">
+    <div class="resume-section">
+      <div class="section-title">
+          <h2>My CV</h2>
+      </div>
+      <table>
+        <div class="section-table">
+            
       <thead>
         <tr>
           <th>Years</th>
@@ -57,7 +91,7 @@
       <tbody>
         <tr>
           <td>2022</td>
-          <td>Bachelor in Sofware Ingineering</td>
+          <td>Bachelor in Software Ingineering</td>
           <td>ESTM DAKAR</td>
         </tr>
         <tr>
@@ -67,10 +101,19 @@
         </tr>
       </tbody>
     </table>
+        </div>
+    
+    </div>
+     
   </section>
 
-  <section id="Contact">
-    <h2>Contact Me</h2>
+  <section id="contact">
+    <div class="contact-section">
+
+      <div class="contact-title">
+        <h2>Contact Me</h2>
+      </div>
+        <div class="contact-form" >
     <form action="#">
       <label for="Name">Name</label><br>
       <input type="text" id="Name" name="Name required">
@@ -83,10 +126,20 @@
       <button type="submit">Send</button>
 
     </form>
+        </div>
+    
+    </div>
+    
   </section>
+  
   <footer>
+    <div class="footer-section">
     <p>&copy; 2025 ALI SAID HAMADOU - All rights reserved</p>
     <a href="#Home">Back to top</a>
+    </div>
+    
   </footer>
+  
+  
 </body>
 </html>
